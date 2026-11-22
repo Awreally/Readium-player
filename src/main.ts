@@ -2,5 +2,6 @@ import './assets/main.css'
 
 import { createApp } from 'vue'
 import App from './App.vue'
+import { createAudioPlayer } from './features/audio-player/useAudioPlayer'
 
-createApp(App).mount('#app')
+createApp(App).use(createAudioPlayer()).mount('#app')
